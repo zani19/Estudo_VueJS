@@ -6,8 +6,7 @@
 
         <!-- <input type="text" v-bind:value="valor" v-on:input="(e)=>valor = e.target.value"></input> -->
 
-        //com atalhos v-bind e v-on
-
+        <!-- com atalhos v-bind e v-on -->
         <input type="text" :value="valor" @:input="(e)=>valor = e.target.value"></input>
     </div>
 </template>
