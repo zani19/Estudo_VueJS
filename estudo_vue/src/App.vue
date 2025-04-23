@@ -8,10 +8,12 @@ import EscutaEvento from "./components/EscutaEvento.vue";
 import PrimeiroComponente from "./components/PrimeiroComponente.vue";
 import PropriedadesAssistidas from "./components/PropriedadesAssistidas.vue";
 import PropriedadesComputadas from "./components/PropriedadesComputadas.vue";
+import RenderizacaoCondicional from "./components/RenderizacaoCondicional.vue";
 </script>
 
 <template>
   <header>Vue</header>
+  <RenderizacaoCondicional nome="Thiago" :qtdeCachorros="2"/>
   <PropriedadesAssistidas />
   <PropriedadesComputadas />
   <EscutaEvento />
