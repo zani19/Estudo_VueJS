@@ -9,10 +9,18 @@ import PrimeiroComponente from "./components/PrimeiroComponente.vue";
 import PropriedadesAssistidas from "./components/PropriedadesAssistidas.vue";
 import PropriedadesComputadas from "./components/PropriedadesComputadas.vue";
 import RenderizacaoCondicional from "./components/RenderizacaoCondicional.vue";
+import RenderizacaoListas from "./components/RenderizacaoListas.vue";
+
+const cachorrosDoThiago = [
+  { nome: "Rex", idade: 2 },
+  { nome: "Bobby", idade: 3 },
+  { nome: "Lebron", idade: 7 },
+];
 </script>
 
 <template>
   <header>Vue</header>
+  <RenderizacaoListas nome="Thiago" :cachorros="[]"/>
   <RenderizacaoCondicional nome="Thiago" :qtdeCachorros="2"/>
   <PropriedadesAssistidas />
   <PropriedadesComputadas />
