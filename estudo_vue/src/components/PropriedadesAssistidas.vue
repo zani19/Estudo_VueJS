@@ -10,18 +10,21 @@
 </template>
 
 <script setup>
-import { watch, ref } from "vue";
+import { ref, watchEffect } from "vue";
 const anoNascimento = ref(1900);
 const anoAtual = ref(2000);
-
 const idade = ref(0);
 
-watch(anoAtual, (ano) => {
+/* watch(anoAtual, (ano) => {
     idade.value = ano - anoNascimento.value;
 });
 watch(anoNascimento, (ano) => {
     idade.value = anoAtual.value - ano;
-});
+}); */
+
+watchEffect(() =>{
+    idade.value = anoAtual.value - anoNascimento.value;
+})
 </script>
 
 <style scoped>
